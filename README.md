@@ -1,92 +1,66 @@
-# Impacto-de-Eventos-por-Origen-de-Pa-s-en-Volatilidad
-Impacto de Eventos por Origen de País en Volatilidad
+# Impacto de Eventos por Origen de País en Volatilidad
 
-Impacto de Eventos por Origen de País en Volatilidad
 Sistemas de alerta ante shocks regulatorios
-Descripción General
+
+## 📌Descripción General
 
 Este proyecto analiza cómo eventos regulatorios negativos impactan la volatilidad posterior del precio, comparando ese impacto entre distintos países.
 
 No todos los mercados reaccionan igual ante una mala noticia regulatoria.
 Este insight mide dónde los eventos generan shocks más violentos, ayudando a construir sistemas de alerta y gestión de riesgo geográfico.
 
-Insight Clave
+## 📍Insight Clave
 
-¿En qué países un Problema Regulatorio genera mayor inestabilidad de precios en los días posteriores al evento?
+- ¿En qué países un Problema Regulatorio genera mayor inestabilidad de precios en los días posteriores al evento?
 
 Una volatilidad post-evento elevada indica:
+- menor previsibilidad regulatoria,
+- mayor incertidumbre institucional,
+- reacciones de mercado más emocionales o desordenadas.
 
-menor previsibilidad regulatoria,
-
-mayor incertidumbre institucional,
-
-reacciones de mercado más emocionales o desordenadas.
-
-Valor de Negocio
+## 💼Valor de Negocio
 
 Identifica riesgo país desde el comportamiento real del mercado.
 
 Permite:
-
-ajustar exposición geográfica,
-
-diseñar alertas automáticas,
-
-calibrar stops y sizing por país.
+- ajustar exposición geográfica,
+- diseñar alertas automáticas,
+- calibrar stops y sizing por país.
 
 Fundamental para:
-
-carteras internacionales,
-
-análisis de riesgo regulatorio,
-
-trading event-driven.
+- carteras internacionales,
+- análisis de riesgo regulatorio,
+- trading event-driven.
 
 Complementa ratings soberanos con datos empíricos.
 
 Fuentes de Datos
+- eventos_corporativos
+- ticker_id
+- fecha
+- tipo_evento
+- tickers
+- ticker_id
+- bolsa_mercado
+- precios_diarios
+- ticker_id
+- fecha
+- open
+- close
 
-eventos_corporativos
+## 🧠Lógica del Análisis
 
-ticker_id
+- Se filtran eventos corporativos del tipo Problema_Regulatorio.
 
-fecha
+- Para cada evento se calcula la volatilidad de los 3 días posteriores, usando:
+  - desviación estándar de retornos intradía.
 
-tipo_evento
+- Se asegura consistencia exigiendo exactamente 3 días post-evento.
+- Se agrupan los resultados por país / mercado.
+- Se calcula la volatilidad promedio post-evento por país.
+- Se descartan países con baja muestra estadística.
 
-tickers
-
-ticker_id
-
-bolsa_mercado
-
-precios_diarios
-
-ticker_id
-
-fecha
-
-open
-
-close
-
-Lógica del Análisis
-
-Se filtran eventos corporativos del tipo Problema_Regulatorio.
-
-Para cada evento se calcula la volatilidad de los 3 días posteriores, usando:
-
-desviación estándar de retornos intradía.
-
-Se asegura consistencia exigiendo exactamente 3 días post-evento.
-
-Se agrupan los resultados por país / mercado.
-
-Se calcula la volatilidad promedio post-evento por país.
-
-Se descartan países con baja muestra estadística.
-
-Interpretación de Resultados
+## 📊Interpretación de Resultados
 
 Alta volatilidad post-evento
 → Mercado sensible e inestable ante shocks regulatorios.
@@ -99,34 +73,28 @@ Volatilidad moderada o baja
 Diferencias claras entre países
 → Evidencia empírica de primas de riesgo regulatorias.
 
-Casos de Uso
+## 🧩Casos de Uso
 
-Sistemas de alerta temprana por país.
+- Sistemas de alerta temprana por país.
+- Ajuste de exposición internacional antes de eventos.
+- Evaluación comparativa de riesgo regulatorio.
+- Modelos de stress geográfico.
+- Priorización de mercados para inversión institucional.
 
-Ajuste de exposición internacional antes de eventos.
+## 🚀Posibles Extensiones
 
-Evaluación comparativa de riesgo regulatorio.
+- Comparar Problemas Regulatorios vs. otros eventos.
+- Analizar ventanas de 5 y 10 días post-evento.
+- Normalizar por volatilidad histórica del país.
+- Integrar con kurtosis y skewness post-evento.
+- Evaluar asimetría (volatilidad al alza vs. a la baja).
 
-Modelos de stress geográfico.
-
-Priorización de mercados para inversión institucional.
-
-Posibles Extensiones
-
-Comparar Problemas Regulatorios vs. otros eventos.
-
-Analizar ventanas de 5 y 10 días post-evento.
-
-Normalizar por volatilidad histórica del país.
-
-Integrar con kurtosis y skewness post-evento.
-
-Evaluar asimetría (volatilidad al alza vs. a la baja).
-
-Nota Final
+## ✒️Nota Final
 
 El riesgo regulatorio no se mide en comunicados.
 Se mide en cómo tiembla el mercado después.
 
-Este insight no pregunta si hubo un problema,
-pregunta dónde ese problema realmente desestabiliza todo 🌍⚠️
+Este insight no pregunta si hubo un problema, pregunta dónde ese problema realmente desestabiliza todo 🌍⚠️
+
+## 👤Autora
+Flavia Hepp Proyecto de SQL aplicó un análisis de riesgo basado en eventos.
