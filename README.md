@@ -98,3 +98,72 @@ Este insight no pregunta si hubo un problema, pregunta dónde ese problema realm
 
 ## 👤Autora
 Flavia Hepp Proyecto de SQL aplicó un análisis de riesgo basado en eventos.
+
+***
+📊⚡ **No todos los eventos mueven el mercado igual… y eso es una ventaja**
+
+En trading, muchas estrategias reaccionan a eventos:
+
+📢 Earnings
+🔀 Splits
+🏦 Cambios regulatorios
+
+Pero hay una pregunta clave que pocas veces se cuantifica bien:
+
+👉 **¿Qué eventos realmente generan volatilidad?**
+
+---
+
+💡 Estuve analizando esto con un enfoque simple:
+
+Medir la **volatilidad en los 3 días posteriores** a cada evento corporativo.
+
+---
+
+🔥 **El insight:**
+
+Clasificar eventos según cuánto “mueven” el precio después de ocurrir.
+
+No todos tienen el mismo impacto:
+
+* Algunos generan movimientos explosivos
+* Otros… prácticamente nada
+
+---
+
+🧠 **¿Por qué es importante?**
+
+Porque te permite anticipar el comportamiento del mercado:
+
+👉 Antes del evento, ya sabés qué esperar después.
+
+---
+
+📈 Aplicaciones prácticas:
+
+* Ajustar stops y gestión de riesgo
+* Elegir qué eventos tradear (y cuáles ignorar)
+* Diseñar estrategias event-driven
+* Priorizar oportunidades con mayor potencial de movimiento
+
+---
+
+⚡ Ejemplo conceptual:
+
+* Earnings → alta volatilidad esperada
+* Split → impacto más moderado
+* Otros eventos → depende del contexto
+
+👉 Pero ahora, en lugar de suponerlo… lo medís.
+
+---
+
+💬 El mercado no reacciona igual a todas las noticias.
+
+👉 Y entender *cómo reacciona* es más valioso que la noticia en sí.
+
+---
+
+En trading cuantitativo, medir el impacto es mejor que asumirlo.
+
+¿Alguna vez te sorprendió que una noticia “importante” no moviera el precio… o al revés? 👇
