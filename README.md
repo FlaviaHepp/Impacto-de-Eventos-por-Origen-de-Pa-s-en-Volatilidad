@@ -167,3 +167,60 @@ Porque te permite anticipar el comportamiento del mercado:
 En trading cuantitativo, medir el impacto es mejor que asumirlo.
 
 ¿Alguna vez te sorprendió que una noticia “importante” no moviera el precio… o al revés? 👇
+
+***
+🌍 **No todos los mercados reaccionan igual ante malas noticias.**
+
+Cuando aparece un **problema regulatorio**, sabemos que va a haber impacto.
+
+Pero hay una pregunta más profunda:
+
+🧠 **¿En qué países ese impacto es más violento?**
+
+---
+
+📊 En este análisis medí:
+
+👉 La **volatilidad en los 3 días posteriores** al evento
+👉 Usando desviación estándar de los retornos
+👉 Y comparando… **por país / mercado**
+
+---
+
+⚠️ Resultado clave:
+
+👉 Algunos mercados muestran una reacción **mucho más volátil**
+👉 Otros absorben el impacto de forma más estable
+
+---
+
+💡 ¿Por qué pasa esto?
+
+Porque cada mercado tiene:
+
+* Diferente nivel de eficiencia
+* Distinta profundidad de liquidez
+* Regulaciones y transparencia variables
+
+---
+
+🚨 Insight clave:
+**El mismo evento no genera el mismo riesgo…
+depende del mercado donde ocurre.**
+
+---
+
+🔍 ¿Qué permite este análisis?
+
+✔️ Detectar mercados más sensibles a eventos negativos
+✔️ Ajustar exposición geográfica
+✔️ Construir sistemas de alerta más precisos
+
+---
+
+📉 Porque en trading global, el riesgo no solo está en el activo…
+está en el contexto donde opera.
+
+---
+
+#Quant #Trading #DataScience #RiskManagement #Volatility #GlobalMarkets #Finanzas
